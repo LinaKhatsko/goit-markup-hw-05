@@ -419,7 +419,7 @@
     </footer>
     <div class="backdrop is-open">
         <div class="modal">
-            <button type="button" class="modal-close-btn close-hover">
+            <button type="button" class="modal-close-btn">
                 <svg class="modal-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -428,7 +428,7 @@
             <form class="modal-form">
                 <div class="form-field">
                 <label class="form-label" for="input-name">Name</label>
-                <div>
+                <div class="modal-input-wrap">
                  <input 
                  type="text"
                  class="form-input"
@@ -442,7 +442,7 @@
                 </div>
                 <div class="form-field">
                 <label class="form-label" for="input-tel">Phone</label>
-                <div>
+                <div class="modal-input-wrap">
                  <input 
                  type="tel" 
                  class="form-input"
@@ -456,7 +456,7 @@
                 </div>
                 <div class="form-field">
                 <label class="form-label" for="input-email">Email</label>
-                <div>
+                <div class="modal-input-wrap">
                  <input
                  type="email" 
                  class="form-input"
@@ -467,6 +467,30 @@
                     <use href="./images/icons.svg#icon-email"></use>
                  </svg>
                 </div>
+                </div>
+                <div class="form-field text-area">
+                    <label class="form-label" for="user-comment">Comment</label>
+                    <textarea 
+                    class="modal-textarea"
+                    name="user-comment"
+                    id="user-comment"
+                    placeholder="Text input"></textarea>
+                </div>
+                <div class="checkbox-field">
+                    <input type="checkbox" 
+                    class="visually-hidden input-check" 
+                    id="privacy" 
+                    name="privacy" 
+                    value="true"/>
+                    <label class="modal-check-label" for="privacy">
+                        <span class="custom-checkbox">
+                            <svg width="10" height="8">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the
+                    <a class="check-link" href="">Privacy Policy</a>
+                    </label>
                 </div>
                 <button type="submit" class="modal-btn">Send</button>
             </form>
